@@ -1,0 +1,45 @@
+<style>
+.mode-landscape .sl-layout { flex-direction: row; }
+.mode-portrait .sl-layout { flex-direction: column; }
+.mode-landscape .sl-left { width: 54%; }
+.mode-portrait .sl-left { width: 100%; }
+.mode-landscape .sl-right { width: 46%; }
+.mode-portrait .sl-right { display: none; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex h-full">
+
+    <!-- Left: Content -->
+    <div class="sl-left flex flex-col justify-between p-12">
+      <div>
+        <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold tracking-widest uppercase bg-indigo-100 text-indigo-700">Free &amp; Self-Hosted</span>
+      </div>
+
+      <div>
+        <h1 class="text-5xl font-black leading-tight text-slate-900 mb-5">
+          Own Your<br/>
+          Digital Storefront.<br/>
+          <span class="text-indigo-600">Pay Nothing.</span>
+        </h1>
+        <p class="text-lg text-slate-600 max-w-sm leading-relaxed">
+          A conversion-optimized product page for selling digital goods — without commissions, platform lock-in, or monthly fees.
+        </p>
+      </div>
+
+      <div>
+        <data-attribution />
+      </div>
+    </div>
+
+    <!-- Right: Visual -->
+    <div class="sl-right overflow-hidden bg-indigo-50">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=sleek%20digital%20product%20storefront%20page%20on%20a%20modern%20laptop%2C%20clean%20minimalist%20e-commerce%20UI%20with%20indigo%20and%20white%20color%20scheme%2C%20professional%20product%20listing%20with%20buy%20button%2C%20soft%20studio%20lighting"
+        alt="Digital product storefront"
+        class="w-full h-full object-cover"
+      />
+    </div>
+
+  </div>
+</section>
