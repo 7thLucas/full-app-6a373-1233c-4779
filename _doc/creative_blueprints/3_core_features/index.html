@@ -1,0 +1,63 @@
+<style>
+.mode-landscape .sl-grid { grid-template-columns: repeat(3, 1fr); }
+.mode-portrait .sl-grid { grid-template-columns: repeat(2, 1fr); }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="p-12 h-full flex flex-col">
+
+    <!-- Header -->
+    <div class="mb-5">
+      <span class="text-xs font-semibold tracking-widest uppercase text-indigo-500 block mb-1">What's Built In</span>
+      <h2 class="text-3xl font-bold text-slate-900">Core Features</h2>
+    </div>
+
+    <!-- Persona chips -->
+    <div class="flex gap-2 mb-7">
+      <span class="px-4 py-1.5 rounded-full text-sm font-semibold bg-indigo-600 text-white">Digital Seller</span>
+      <span class="px-4 py-1.5 rounded-full text-sm font-medium bg-slate-100 text-slate-500">Indie Creator</span>
+      <span class="px-4 py-1.5 rounded-full text-sm font-medium bg-slate-100 text-slate-500">SaaS Maker</span>
+    </div>
+
+    <!-- Feature grid -->
+    <div class="sl-grid grid gap-4 flex-1">
+
+      <div class="bg-slate-50 rounded-xl p-5 flex flex-col gap-2 border border-slate-100">
+        <span class="text-2xl">🖼️</span>
+        <h3 class="font-bold text-slate-800 text-base">Product Hero</h3>
+        <p class="text-slate-500 text-sm leading-relaxed">Image gallery and product showcase with a polished, high-converting layout.</p>
+      </div>
+
+      <div class="bg-indigo-600 rounded-xl p-5 flex flex-col gap-2">
+        <span class="text-2xl">💳</span>
+        <h3 class="font-bold text-white text-base">Price &amp; Buy CTA</h3>
+        <p class="text-indigo-200 text-sm leading-relaxed">Clear price display with a prominent "Buy Now" button wired to the payment flow.</p>
+      </div>
+
+      <div class="bg-slate-50 rounded-xl p-5 flex flex-col gap-2 border border-slate-100">
+        <span class="text-2xl">📋</span>
+        <h3 class="font-bold text-slate-800 text-base">Product Details</h3>
+        <p class="text-slate-500 text-sm leading-relaxed">Description, what's included, file specs, and digital delivery info — all in one view.</p>
+      </div>
+
+      <div class="bg-slate-50 rounded-xl p-5 flex flex-col gap-2 border border-slate-100">
+        <span class="text-2xl">🛡️</span>
+        <h3 class="font-bold text-slate-800 text-base">Trust Signals</h3>
+        <p class="text-slate-500 text-sm leading-relaxed">Payment badges, security indicators, and availability status to boost buyer confidence.</p>
+      </div>
+
+      <div class="bg-slate-50 rounded-xl p-5 flex flex-col gap-2 border border-slate-100">
+        <span class="text-2xl">⭐</span>
+        <h3 class="font-bold text-slate-800 text-base">Reviews</h3>
+        <p class="text-slate-500 text-sm leading-relaxed">Customer ratings and testimonials surfaced prominently to build social proof.</p>
+      </div>
+
+      <div class="bg-slate-50 rounded-xl p-5 flex flex-col gap-2 border border-slate-100">
+        <span class="text-2xl">⚡</span>
+        <h3 class="font-bold text-slate-800 text-base">Urgency &amp; Scarcity</h3>
+        <p class="text-slate-500 text-sm leading-relaxed">Stock counts and limited-availability signals that drive conversion at the moment of decision.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
