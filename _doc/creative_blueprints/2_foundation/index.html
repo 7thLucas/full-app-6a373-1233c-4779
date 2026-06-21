@@ -1,0 +1,75 @@
+<style>
+.mode-landscape .sl-split { flex-direction: row; gap: 2rem; }
+.mode-portrait .sl-split { flex-direction: column; gap: 1.5rem; }
+.mode-landscape .sl-col { width: 50%; }
+.mode-portrait .sl-col { width: 100%; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="p-12 h-full flex flex-col">
+
+    <!-- Header -->
+    <div class="mb-8">
+      <span class="text-xs font-semibold tracking-widest uppercase text-indigo-500">The Problem &amp; The Solution</span>
+    </div>
+
+    <!-- Split layout -->
+    <div class="sl-split flex flex-1">
+
+      <!-- Problem -->
+      <div class="sl-col bg-slate-900 rounded-2xl p-8 flex flex-col justify-between">
+        <div>
+          <div class="w-10 h-10 rounded-full bg-red-500 bg-opacity-20 flex items-center justify-center mb-5">
+            <span class="text-red-400 text-lg font-bold">!</span>
+          </div>
+          <h2 class="text-2xl font-bold text-white mb-4">The Problem</h2>
+          <p class="text-slate-300 leading-relaxed text-sm">
+            Selling digital products online means handing a cut to platforms like SellHub, Sellix, or Shoppy — commission fees, monthly subscriptions, and zero ownership of the buyer experience.
+          </p>
+        </div>
+        <ul class="mt-6 space-y-2">
+          <li class="flex items-center gap-3">
+            <span class="w-2 h-2 rounded-full bg-red-400 flex-shrink-0"></span>
+            <span class="text-slate-400 text-sm">Commission fees taken on every sale</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="w-2 h-2 rounded-full bg-red-400 flex-shrink-0"></span>
+            <span class="text-slate-400 text-sm">Monthly subscription costs stack up</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="w-2 h-2 rounded-full bg-red-400 flex-shrink-0"></span>
+            <span class="text-slate-400 text-sm">No ownership of the storefront or brand</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Solution -->
+      <div class="sl-col bg-indigo-600 rounded-2xl p-8 flex flex-col justify-between">
+        <div>
+          <div class="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center mb-5">
+            <span class="text-white text-lg font-bold">✓</span>
+          </div>
+          <h2 class="text-2xl font-bold text-white mb-4">The Solution</h2>
+          <p class="text-indigo-100 leading-relaxed text-sm">
+            A self-hosted product page with the same polished, conversion-optimized UX as SellHub — hero gallery, price display, Buy Now CTA, trust signals, and reviews — with no middleman and zero fees.
+          </p>
+        </div>
+        <ul class="mt-6 space-y-2">
+          <li class="flex items-center gap-3">
+            <span class="w-2 h-2 rounded-full bg-emerald-300 flex-shrink-0"></span>
+            <span class="text-indigo-100 text-sm">0% commission on every sale</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="w-2 h-2 rounded-full bg-emerald-300 flex-shrink-0"></span>
+            <span class="text-indigo-100 text-sm">Free to host — yours forever</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="w-2 h-2 rounded-full bg-emerald-300 flex-shrink-0"></span>
+            <span class="text-indigo-100 text-sm">Full ownership of your storefront &amp; brand</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
