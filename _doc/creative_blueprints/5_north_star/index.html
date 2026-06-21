@@ -1,0 +1,96 @@
+<style>
+.mode-landscape .sl-layout { flex-direction: row; gap: 2rem; }
+.mode-portrait .sl-layout { flex-direction: column; gap: 1.5rem; }
+.mode-landscape .sl-left { width: 44%; }
+.mode-portrait .sl-left { width: 100%; }
+.mode-landscape .sl-right { width: 56%; }
+.mode-portrait .sl-right { width: 100%; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="p-12 h-full flex flex-col">
+
+    <!-- Header -->
+    <div class="mb-6">
+      <span class="text-xs font-semibold tracking-widest uppercase text-indigo-500 block mb-1">North Star Metric</span>
+      <h2 class="text-3xl font-bold text-slate-900">Weekly Verified Operations</h2>
+      <p class="text-xs text-slate-400 mt-1 italic">Projected impact — based on your inputs</p>
+    </div>
+
+    <div class="sl-layout flex flex-1">
+
+      <!-- Left: Operation definition + projection -->
+      <div class="sl-left flex flex-col gap-4">
+
+        <div class="bg-indigo-600 rounded-xl p-6">
+          <h3 class="text-white font-bold text-sm mb-2">The Verified Operation</h3>
+          <p class="text-indigo-100 text-sm leading-relaxed">
+            A <strong class="text-white">Product Purchase Completed</strong> — a buyer lands on the page, clicks Buy Now, pays, and receives their digital product. One complete, verified sale.
+          </p>
+        </div>
+
+        <div class="bg-slate-50 rounded-xl p-5 border border-slate-100 flex-1">
+          <h3 class="text-slate-700 font-bold text-sm mb-4">Weekly Purchase Projection</h3>
+          <div class="space-y-3 text-sm text-slate-600">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="bg-amber-100 text-amber-700 px-2 py-0.5 rounded text-xs font-semibold">Assumption — adjust this</span>
+              <span>Visitors / week: <strong class="text-slate-800">500</strong></span>
+            </div>
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="bg-amber-100 text-amber-700 px-2 py-0.5 rounded text-xs font-semibold">Assumption — adjust this</span>
+              <span>Conversion rate: <strong class="text-slate-800">2%</strong></span>
+            </div>
+            <div class="border-t border-slate-200 pt-3 mt-2">
+              <p class="font-mono text-slate-500 text-xs mb-1">500 visitors × 2% conversion =</p>
+              <span class="font-black text-indigo-700 text-2xl">10 purchases / week</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right: Value & ROI -->
+      <div class="sl-right flex flex-col gap-4">
+
+        <div class="bg-slate-900 rounded-xl p-6">
+          <h3 class="text-white font-bold text-sm mb-3">Value Per Operation</h3>
+          <div class="space-y-3 text-sm">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="bg-amber-400 bg-opacity-20 text-amber-300 px-2 py-0.5 rounded text-xs font-semibold">Assumption — adjust this</span>
+              <span class="text-slate-300">Avg. product price: <strong class="text-white">$25</strong></span>
+            </div>
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="bg-amber-400 bg-opacity-20 text-amber-300 px-2 py-0.5 rounded text-xs font-semibold">Assumption — adjust this</span>
+              <span class="text-slate-300">Platform fee saved per sale: <strong class="text-white">5% = $1.25</strong></span>
+            </div>
+            <div class="border-t border-slate-700 pt-3 mt-1">
+              <p class="font-mono text-slate-400 text-xs">10 purchases × $1.25 fee saved =</p>
+              <span class="font-black text-emerald-400 text-xl">$12.50 saved / week</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-3">
+          <div class="bg-emerald-600 rounded-xl p-5 flex-1">
+            <div class="text-emerald-100 text-xs font-semibold uppercase tracking-wider mb-1">Fees Saved / Week</div>
+            <div class="text-white font-black text-3xl">$12.50</div>
+            <div class="text-emerald-200 text-xs mt-1 font-mono">10 × $1.25</div>
+          </div>
+          <div class="bg-emerald-700 rounded-xl p-5 flex-1">
+            <div class="text-emerald-100 text-xs font-semibold uppercase tracking-wider mb-1">Fees Saved / Year</div>
+            <div class="text-white font-black text-3xl">$650</div>
+            <div class="text-emerald-200 text-xs mt-1 font-mono">$12.50 × 52 weeks</div>
+          </div>
+        </div>
+
+        <div class="bg-indigo-50 rounded-xl p-4 border border-indigo-100">
+          <p class="text-slate-500 text-xs leading-relaxed">
+            <strong class="text-slate-700">Projected impact — based on your inputs.</strong> Update the assumption chips above with your real visitor counts, conversion rate, and product price to get accurate projections.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
