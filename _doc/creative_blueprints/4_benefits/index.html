@@ -1,0 +1,56 @@
+<style>
+.mode-landscape .sl-grid { grid-template-columns: repeat(3, 1fr); }
+.mode-portrait .sl-grid { grid-template-columns: repeat(2, 1fr); }
+.mode-landscape .sl-roi { grid-column: span 3; }
+.mode-portrait .sl-roi { grid-column: span 2; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="p-12 h-full flex flex-col">
+
+    <!-- Header -->
+    <div class="mb-8">
+      <span class="text-xs font-semibold tracking-widest uppercase text-indigo-500 block mb-1">The Value</span>
+      <h2 class="text-3xl font-bold text-slate-900">Why Switch?</h2>
+    </div>
+
+    <div class="sl-grid grid gap-4 flex-1">
+
+      <!-- Commission -->
+      <div class="bg-emerald-50 rounded-xl p-6 flex flex-col gap-1 border border-emerald-100">
+        <span class="text-xs font-semibold uppercase tracking-wider text-emerald-600">Commission</span>
+        <span class="text-4xl font-black text-emerald-700">0%</span>
+        <span class="text-sm text-emerald-800 leading-snug">Kept on every sale — no platform cut, ever</span>
+      </div>
+
+      <!-- Monthly cost -->
+      <div class="bg-indigo-50 rounded-xl p-6 flex flex-col gap-1 border border-indigo-100">
+        <span class="text-xs font-semibold uppercase tracking-wider text-indigo-600">Monthly Cost</span>
+        <span class="text-4xl font-black text-indigo-700">$0</span>
+        <span class="text-sm text-indigo-800 leading-snug">No subscription fees. Self-hosted and free.</span>
+      </div>
+
+      <!-- Ownership -->
+      <div class="bg-slate-900 rounded-xl p-6 flex flex-col gap-1">
+        <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Ownership</span>
+        <span class="text-4xl font-black text-white">100%</span>
+        <span class="text-sm text-slate-300 leading-snug">Your storefront, your data, your brand — entirely yours</span>
+      </div>
+
+      <!-- ROI summary -->
+      <div class="sl-roi bg-indigo-600 rounded-xl p-6 flex items-center justify-between gap-6">
+        <div class="flex-1">
+          <h3 class="text-white font-bold text-lg mb-2">The Real Benefit</h3>
+          <p class="text-indigo-200 text-sm leading-relaxed max-w-xl">
+            Every commission percentage saved is pure margin back in your pocket. At volume, the compounding effect is significant — and every dollar saved is one you never have to earn back from a platform taking their cut.
+          </p>
+        </div>
+        <div class="text-right flex-shrink-0">
+          <div class="text-3xl font-black text-white leading-tight">More Revenue</div>
+          <div class="text-indigo-300 text-sm mt-1">on every single sale</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
